@@ -126,7 +126,7 @@ async function openStorageConnectionAsync () {
 async function registerNodeAsync (nodeURI) {
   let isRegistered = false
   let registerAttempts = 1
-  const maxRegisterAttempts = 12
+  const maxRegisterAttempts = 5
   const retryWaitTimeMs = 5 * 1000
 
   while (!isRegistered) {
